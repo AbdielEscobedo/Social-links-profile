@@ -1,34 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdiel Escobedo | Mis Redes</title>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .link-btn {
+      text-decoration: none;
+      background: #333;
+      padding: 12px 20px;
+      border-radius: 30px;
+      color: #fff;
+      font-size: 1.1rem;
+      transition: 0.3s;
+    }
+
+    .link-btn:hover {
+      background: #ff9800;
+      transform: scale(1.05);
+    }
+    .profile-pic {
+  width: 120px;          /* tamaño de la imagen */
+  height: 120px;
+  border-radius: 50%;    /* la hace circular */
+  object-fit: cover;     /* recorta la imagen si no es cuadrada */
+  border: 3px solid #fff; /* borde blanco opcional */
+  margin-bottom: 15px;
+}
   </style>
 </head>
 <body>
+  <div class="container">
+    <img src="/assets/images/Perfil.jpg" alt="Foto de Abdiel" class="profile-pic">
+    <h1> Hola ✌️, soy Abdiel Escobedo</h1>
+    <p>Ingeniero Mecatrónico | Educador | Creador</p>
+    <div class="links">
+      <a class="link-btn" href="https://github.com/AbdielEscobedo" target="_blank">💻 GitHub</a>
+      <a class="link-btn" href="https://www.linkedin.com/in/abdiel-escobedo-142654195" target="_blank">🔗 LinkedIn</a>
+      <a class="link-btn" href="https://www.youtube.com/@diseñandoconabdiel" target="_blank" rel="noopener" aria-label="YouTube de Abdiel">
+  <img src="https://cdn.simpleicons.org/youtube/FF0000" alt="YouTube" width="22" height="22" style="vertical-align:middle;">
+  YouTube
+</a>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <a class="link-btn" href="https://www.tiktok.com/@abdiel.escobedo" target="_blank" rel="noopener" aria-label="TikTok de Abdiel">
+      <img src="https://cdn.simpleicons.org/tiktok" alt="Logo TikTok" width="22" height="22" style="vertical-align:middle;margin-right:10px;">
+      TikTok
+      </a>
+<a class="link-btn" href="https://instagram.com/abdiel_escobedo/" target="_blank">📷 Instagram</a>
+    </div>
   </div>
 </body>
 </html>
